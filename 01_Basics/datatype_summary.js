@@ -38,3 +38,32 @@ let fun = function(){
     console.log("Hello World")
 }
 console.log("fun = ", typeof fun)
+
+// *************Stack and Heap Memmory **************
+
+// Stack ( Primitive ) and Heap ( Non-primitive )
+
+//Example of Stack where a copy of variable is made
+let value1 = "one"
+let value2 = value1
+console.log(value2)
+value2 = "Three"
+
+console.log(value1)
+console.log(value2)
+
+//Example of Non-primitive where the reference of the variable is given
+
+let user1 ={
+    name : "Girish",
+    email : "girish@gamil.com"
+}
+
+let user2 = user1
+
+console.log("\n", user2)
+
+user2.email = "girish@yahoo.com"
+
+console.log(user1.email)
+console.log(user2.email)
